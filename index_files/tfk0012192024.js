@@ -70,8 +70,7 @@
       /* تعديل تصميم البطاقات عند الشاشات الصغيرة */
       @media (max-width: 768px) {
         .iframe-container {
-          height: 3160px;
-          /* زودنا الارتفاع 3 أضعاف */
+          height: 3250px;
         }
       }
     </style>
