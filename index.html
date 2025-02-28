@@ -14,6 +14,21 @@
 
     <link rel="icon" href="https://sections.storebooks.shop/SB-logo.png" type="image/png">
 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // إزالة أي أيقونات أخرى موجودة
+        let oldIcons = document.querySelectorAll("link[rel='icon'], link[rel='shortcut icon']");
+        oldIcons.forEach(icon => icon.remove());
+
+        // إضافة الأيقونة الخاصة بك من جديد
+        let newIcon = document.createElement("link");
+        newIcon.rel = "icon";
+        newIcon.href = "https://sections.storebooks.shop/SB-logo.png";  // تأكد أن الأيقونة في المكان الصحيح
+        newIcon.type = "image/png";
+
+        document.head.appendChild(newIcon);
+    });
+</script>
 
     <meta name="keywords" content="universities,
                                    StoreBooks,
