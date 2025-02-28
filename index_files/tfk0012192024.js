@@ -4,6 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" c>
+    <link rel="icon" href="https://sections.storebooks.shop/SB-logo.png" type="image/png">
     <title> StoreBooks  - الجامعات 
     </title>
     <style>
