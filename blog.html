@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدونة StoreBooks | مقالات عن الكتب والأدوات المكتبية</title>
+    <meta name="description" content="مدونة متجر StoreBooks - أحدث المقالات عن الكتب الجامعية، الأدوات المكتبية، مراجعات الكتب وأكثر">
+    
+    <!-- نفس الروابط الموجودة في الموقع الأصلي -->
+    <link rel="stylesheet" href="./index_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./index_files/font-awesome.css">
+    <link rel="stylesheet" href="./index_files/animate.min.css">
+    <link rel="stylesheet" href="./index_files/hover-min.css">
+    <link rel="stylesheet" href="./index_files/toastr.min.css">
+    <link rel="stylesheet" href="./index_files/main.css">
+    <link rel="stylesheet" href="./index_files/home.css">
+    <link rel="stylesheet" href="./index_files/main-rtl.css">
+    <link rel="stylesheet" href="./index_files/home-rtl.css">
+    
+    <!-- ستايل خاص بالمدونة -->
+    <style>
+        .blog-container {
+            padding: 50px 0;
+            background-color: var(--body-bg);
+        }
+        .blog-post {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .blog-post:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        .blog-post img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .blog-content {
+            padding: 20px;
+        }
+        .post-date {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .blog-post h2 a {
+            color: #121212;
+            font-weight: bold;
+        }
+        .blog-post h2 a:hover {
+            color: var(--main-bg-color);
+            text-decoration: none;
+        }
+        .read-more {
+            color: var(--main-bg-color);
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 15px;
+        }
+        .blog-categories {
+            margin-bottom: 30px;
+        }
+        .category-btn {
+            background: white;
+            border: 1px solid #ddd;
+            color: #555;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        .category-btn:hover, .category-btn.active {
+            background: var(--main-bg-color);
+            color: white;
+            border-color: var(--main-bg-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- نفس الهيدر من الموقع الأصلي -->
+    <div id="main">
+        <div id="overlay"></div>
+        <div class="main-footer">
+            <div class="nav-div sticky-top" id="navbar">
+                <!-- ... الهيدر الحالي كما هو ... -->
+            </div>
+
+            <!-- محتوى المدونة -->
+            <section class="blog-container">
+                <div class="container">
+                    <h1 class="text-center mb-5">مدونة StoreBooks</h1>
+                    
+                    <div class="text-center blog-categories">
+                        <a href="blog.html" class="btn btn-sm category-btn active">الكل</a>
+                        <a href="blog.html?category=books" class="btn btn-sm category-btn">مراجعات الكتب</a>
+                        <a href="blog.html?category=tools" class="btn btn-sm category-btn">الأدوات المكتبية</a>
+                        <a href="blog.html?category=reviews" class="btn btn-sm category-btn">آراء القراء</a>
+                    </div>
+                    
+                    <div class="row">
+                        <!-- مقالة 1 -->
+                        <div class="col-md-4">
+                            <article class="blog-post hvr-float">
+                                <img src="https://via.placeholder.com/600x400" alt="مراجعة كتاب العادات الذرية">
+                                <div class="blog-content">
+                                    <span class="post-date">10 مايو 2024</span>
+                                    <h2><a href="post.html">مراجعة كتاب "العادات الذرية" - كيف تبني عادات دائمة؟</a></h2>
+                                    <p>كتاب العادات الذرية لجيمس كلير يقدم استراتيجيات عملية لبناء عادات جيدة والتخلص من السيئة...</p>
+                                    <a href="post.html" class="read-more">اقرأ المزيد <i class="fa fa-arrow-left"></i></a>
+                                </div>
+                            </article>
+                        </div>
+                        
+                        <!-- مقالة 2 -->
+                        <div class="col-md-4">
+                            <article class="blog-post hvr-float">
+                                <img src="https://via.placeholder.com/600x400" alt="أفضل الأدوات المكتبية">
+                                <div class="blog-content">
+                                    <span class="post-date">5 مايو 2024</span>
+                                    <h2><a href="post.html">أفضل 5 أدوات مكتبية لزيادة إنتاجيتك في 2024</a></h2>
+                                    <p>اكتشف أحدث الأدوات المكتبية التي تساعدك على تنظيم وقتك وزيادة إنتاجيتك سواء في الدراسة أو العمل...</p>
+                                    <a href="post.html" class="read-more">اقرأ المزيد <i class="fa fa-arrow-left"></i></a>
+                                </div>
+                            </article>
+                        </div>
+                        
+                        <!-- مقالة 3 -->
+                        <div class="col-md-4">
+                            <article class="blog-post hvr-float">
+                                <img src="https://via.placeholder.com/600x400" alt="كيف تختار الكتاب المناسب">
+                                <div class="blog-content">
+                                    <span class="post-date">1 مايو 2024</span>
+                                    <h2><a href="post.html">دليل المبتدئين: كيف تختار الكتاب المناسب لك؟</a></h2>
+                                    <p>نصائح عملية لاختيار الكتب التي تناسب مستواك واهتماماتك سواء كنت قارئًا مبتدئًا أو محترفًا...</p>
+                                    <a href="post.html" class="read-more">اقرأ المزيد <i class="fa fa-arrow-left"></i></a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    
+                    <!-- روابط التصفح -->
+                    <div class="text-center mt-5">
+                        <a href="#" class="btn btn-primary">المقالات الأقدم <i class="fa fa-arrow-left"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- نفس الفوتر من الموقع الأصلي -->
+            <footer id="footer_dark">
+                <!-- ... الفوتر الحالي كما هو ... -->
+            </footer>
+        </div>
+    </div>
+
+    <!-- نفس السكربتات من الموقع الأصلي -->
+    <script src="./index_files/jquery.min.js"></script>
+    <script src="./index_files/popper.min.js"></script>
+    <script src="./index_files/bootstrap.bundle.min.js"></script>
+    <script src="./index_files/toastr.min.js"></script>
+    <script src="./index_files/main.js"></script>
+    
+    <!-- سكربت خاص بالمدونة -->
+    <script>
+        $(document).ready(function() {
+            // إضافة كلاس active للتصنيف المحدد
+            const urlParams = new URLSearchParams(window.location.search);
+            const category = urlParams.get('category');
+            
+            if(category) {
+                $('.category-btn').removeClass('active');
+                $(`.category-btn[href*="${category}"]`).addClass('active');
+            }
+        });
+    </script>
+</body>
+</html>
